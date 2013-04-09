@@ -1,0 +1,12 @@
+<h1> tracks </h1>
+
+<% form_tag url_for(:tracks, :search) do %>
+
+<p>
+  <%= label_tag :searchterm %>
+  <%= text_field_tag :searchterm %>
+</p>
+
+<%= submit_tag %>
+
+<% end %>
