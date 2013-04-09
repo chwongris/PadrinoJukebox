@@ -3,8 +3,10 @@
 <% @results.each do |x| %>
 <ul>
 <img src="<%= x.artwork_url %>" />
-<li><%= x.title %></li>
+<li><%= x %></li>
 <li><%= x.genre %></li>
+<li><%= x.track_url %></li>
+<a href="/tracks/play?id=<%= x.track_url %>"><%= x.title %></a>
 </ul>
 <% end %>
   

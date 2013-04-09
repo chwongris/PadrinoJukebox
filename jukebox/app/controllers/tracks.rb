@@ -1,3 +1,4 @@
+require 'soundcloud'
 Jukebox::App.controllers :tracks do
   
   # get :index, :map => '/foo/bar' do
@@ -39,4 +40,8 @@ Jukebox::App.controllers :tracks do
 
   end
 
+  post :player do
+  Track.play_track
+  render 'tracks/player'
+  end
 end
