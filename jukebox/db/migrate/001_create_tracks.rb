@@ -13,6 +13,7 @@ class CreateTracks < ActiveRecord::Migration
       t.integer :comment_count
       t.integer :download_count
       t.integer :favouritings_count
+      t.string :stream_url
       t.timestamps
     end
   end
